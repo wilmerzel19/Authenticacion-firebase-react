@@ -239,7 +239,7 @@ export function Home() {
                   <div className="mt-2 mb-0 text-sm">
                     <span className="badge badge-pill bg-soft-success text-success me-2">
                       <i className="bi bi-arrow-up me-1" />
-                      13%
+                      10%
                     </span>
                    
                   </div>
