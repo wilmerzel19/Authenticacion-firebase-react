@@ -4,6 +4,9 @@ import { Login } from './componentes/Login';
 import { Register } from './componentes/Register';
 import { AuthProvider } from './context/authContext';
 import { ProtectedRoute } from './componentes/ProtectedRoute';
+import './App.css';
+
+
 function App() {
   return (
     <div className="bg-slate-300 h-screen text-black flex">
