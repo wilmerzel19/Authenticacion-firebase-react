@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/wilmerzel19/Authenticacion-firebase-react/static/css/main.77e48001.css",
+    "main.js": "/wilmerzel19/Authenticacion-firebase-react/static/js/main.bb1c663c.js",
+    "static/js/787.f81a0625.chunk.js": "/wilmerzel19/Authenticacion-firebase-react/static/js/787.f81a0625.chunk.js",
+    "index.html": "/wilmerzel19/Authenticacion-firebase-react/index.html",
+    "main.bb1c663c.js.map": "/wilmerzel19/Authenticacion-firebase-react/static/js/main.bb1c663c.js.map",
+    "787.f81a0625.chunk.js.map": "/wilmerzel19/Authenticacion-firebase-react/static/js/787.f81a0625.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77e48001.css",
+    "static/js/main.bb1c663c.js"
+  ]
+}
