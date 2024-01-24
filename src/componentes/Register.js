@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { useAuth } from "../context/authContext";
 import { useNavigate } from "react-router-dom";
 
+import logo from '../assets/img/logo.png';
+
+
 
 
 export function Register() {
@@ -39,45 +42,50 @@ export function Register() {
 
   return (
     <div className="container">
-    {error && <div className="alert alert-danger">{error}</div>}
-    <h1 className="text-center mt-4 text-primary">Register</h1>
-  
-    <form onSubmit={handleSubmit} className="bg-white shadow rounded p-4 mt-4">
-      <div className="mb-3">
-        <label htmlFor="email" className="form-label">Email</label>
-        <input
-          className="form-control"
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email"
-          onChange={handleChange}
-        />
-      </div>
-  
-      <div className="mb-3">
-        <label htmlFor="password" className="form-label">Password</label>
-        <input
-          className="form-control"
-          type="password"
-          name="password"
-          id="password"
-          placeholder="********"
-          onChange={handleChange}
-        />
-      </div>
-  
-      <button className="btn btn-primary btn-block" type="submit">
-        Register
-      </button>
-    </form>
-  
-    <p className="my-4 text-sm text-center">
-      Already have an Account?
-      <a href="/login" className="text-primary">Login</a>
-    </p>
-  </div>
+      {error && <div className="alert alert-danger">{error}</div>}
 
+
+      
+      <form onSubmit={handleSubmit} className="bg-white shadow rounded p-4 mt-4">
+        <div className="mb-3">
+        <img src={logo} alt="logo" className="mx-auto d-block w-14 h-13" />
+        <p className="text-center">Campamento Bet-el</p>
+        <h1 className="text-center mt-4 text-primary">Register</h1>
+
+
+          <label htmlFor="email" className="form-label">Email</label>
+          <input
+            className="form-control"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="password" className="form-label">Password</label>
+          <input
+            className="form-control"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="********"
+            onChange={handleChange}
+          />
+        </div>
+
+        <button className="btn btn-primary btn-block" type="submit">
+          Register
+        </button>
+      </form>
+
+      <p className="my-4 text-sm text-center">
+        Already have an Account?
+        <a href="/login" className="text-primary">Login</a>
+      </p>
+    </div>
   );
 }
   

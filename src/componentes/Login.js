@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useAuth } from "../context/authContext";
 import { useNavigate } from "react-router-dom";
+import logo from '../assets/img/logo.png';
+
 
 
 
@@ -69,11 +71,14 @@ export function Login() {
     
 <div className="container-sm ">
   {error && <div className="alert alert-danger">{error}</div>}
-  <h1 className="text-center mt-4 text-primary">Login</h1>
 
   <form onSubmit={handleSubmit} className="bg-white shadow rounded p-8 mt-3">
 
     <div className="mb-3">
+    <img src={logo} alt="logo" className="mx-auto d-block w-14 h-13" />
+        <p className="text-center text-green-600">Campamento Bet-el</p>
+        <h1 className="text-center mt-4 text-primary">Login</h1>
+
       <label htmlFor="email" className="form-label">Email</label>
       <input
         className="form-control form-control-sm"
@@ -100,13 +105,13 @@ export function Login() {
 
     <div className="d-flex justify-content-between align-items-center">
       <button
-        className="btn btn-primary"
+        className="btn btn-primary btn-sm"
         type="submit"
       >
         Login
       </button>
       <a
-        className="text-primary"
+        className="text-primary text-sm"
         href="#!"
         onClick={handleResetPassword}
       >
